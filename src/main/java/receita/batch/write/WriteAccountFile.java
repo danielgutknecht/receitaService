@@ -13,7 +13,7 @@ public class WriteAccountFile extends FlatFileItemWriter<Account> {
 
 	public WriteAccountFile() {
 		setName("contasProcessadas.csv");
-		setResource(new FileSystemResource("./target/arquivo-output/contas.csv"));
+		setResource(new FileSystemResource("./arquivos/arquivo-output/contas.csv"));
 		setAppendAllowed(true);
 		setLineAggregator(lineAggregator());
 	}

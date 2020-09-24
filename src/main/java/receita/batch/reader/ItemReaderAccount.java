@@ -16,7 +16,7 @@ public class ItemReaderAccount extends FlatFileItemReader<Account> {
 
 	public ItemReaderAccount() {
 		setName("itemReaderAccount");
-		setResource(new FileSystemResource("./target/arquivo-input/contas.csv"));
+		setResource(new FileSystemResource("./arquivos/arquivo-input/contas.csv"));
 		setLinesToSkip(1);
 		setLineMapper(lineMapper());
 	}

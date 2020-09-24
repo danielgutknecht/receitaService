@@ -40,7 +40,7 @@ public class StepConfigAccount {
 	
 	@Bean
 	public FileDeletingTasklet fileDeletingTasklet() {
-		return new FileDeletingTasklet(new FileSystemResource("target/arquivo-input"));
+		return new FileDeletingTasklet(new FileSystemResource("./arquivos/arquivo-input"));
 	}
 
 	@Bean
